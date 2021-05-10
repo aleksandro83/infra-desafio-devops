@@ -17,6 +17,7 @@ aws_public_key_path        = "/home/aws-dev.pem.pub"
 aws_key_name               = "aws-dev"
 address_allowed            = "189.110.198.240/32" # Seu IP público
 bucket_name                = "desafio-devops-remote-state-01"
+dynamodb_table_name        = "desafio-devops-terraform-state-lock-dynamo"
 vpc1_cidr_block            = "10.0.0.0/16"
 subnet_public1_cidr_block  = "10.0.1.0/24"
 subnet_private1_cidr_block = "10.0.3.0/24"
