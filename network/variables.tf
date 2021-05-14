@@ -46,6 +46,10 @@ variable "aws_public_key_path" {
   description = "/home/"
 }
 
+variable "bucket_name" {
+  description = "Bucket name for storage Terraform tfstate remote."
+}
+
 variable "dynamodb_table_name"{
   description = "DynamoDB Table name for lock Terraform tfstate remote."
 }

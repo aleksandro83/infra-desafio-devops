@@ -22,3 +22,18 @@ output "security_group" {
   value       = aws_security_group.services.id
   description = "Id of security Group"
 }
+
+output "bucket_domain_name" {
+  value       = join("", aws_s3_bucket.terraform-state-storage-s3.*.bucket_domain_name)
+  description = "FQDN of bucket"
+}
+
+output "bucket_id" {
+  value       = join("", aws_s3_bucket.terraform-state-storage-s3.*.id)
+  description = "Bucket Name (aka ID)"
+}
+
+output "bucket_arn" {
+  value       = join("", aws_s3_bucket.terraform-state-storage-s3.*.arn)
+  description = "Bucket ARN"
+}
